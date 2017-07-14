@@ -36,24 +36,22 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// app.use(express.static('public'));
-
 // =======================================================
 // ROUTER
 // Points our server to series of "route" files
 // Gives server a kind of map for responding to visitors or request data
 // =======================================================
 
-app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "app/public/home.html"));
-});
+// app.get("/", function(req, res) {
+//   res.sendFile(path.join(__dirname, "app/public/home.html"));
+// });
 
-app.get("/survey", function(req, res) {
-  res.sendFile(path.join(__dirname, "app/public/survey.html"));
-});
+// app.get("/survey", function(req, res) {
+//   res.sendFile(path.join(__dirname, "app/public/survey.html"));
+// });
 
-// require("./app/routing/apiRoutes.js")(app);
-// require("./app/routing/htmlRoutes.js")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // =======================================================
 // LISTENER
