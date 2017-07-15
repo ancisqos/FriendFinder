@@ -42,7 +42,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Gives server a kind of map for responding to visitors or request data
 // =======================================================
 
-// require("./app/routing/apiRoutes")(app);
+require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
 // =======================================================
