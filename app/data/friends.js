@@ -1,6 +1,8 @@
 // DATA
 
-const friends = [ {
+const friends = [ 
+
+{
 	"name" : "Kylo Ren",
 	"photo" : "http://vignette3.wikia.nocookie.net/deathbattlefanon/images/2/2a/Kylo-Ren-Profile.png/revision/latest?cb=20160602090950",
 	"scores" : [2,5,5,5,5,4,5,5,4,5]
